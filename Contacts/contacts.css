@@ -1,0 +1,104 @@
+.contact {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem 3rem;
+}
+
+.contacts-form {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+} 
+
+.required {
+    display: grid;
+    
+}
+
+/* .required #email {
+
+    border-color: red;
+} */
+
+.message {
+    width: 100%;
+    min-height: 20rem;
+    resize: vertical;
+}
+
+
+
+.btn {
+    margin-top: 2rem;
+    text-align: center;
+    
+}
+
+.email-address {
+    color: var(--blue-1);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.img {
+    position: relative;
+    margin-bottom: 3rem;
+    padding: 2rem;
+   
+}
+
+.social_media_icons-bio {
+    position: absolute;
+    bottom: 0;
+    left: 33%
+}
+
+.form-message {
+    display: grid;
+    margin: 3rem 1rem;
+}
+
+form input {
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+form div textarea {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+    /* LAPTOP */
+
+@media screen and (min-width: 600px) {
+    
+    .contact {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 5rem 20rem;
+        justify-content: center;
+    }
+
+    .img img {
+        min-height: 90vh;
+    }
+
+    .contacts-form {
+        font-size: 2rem;
+        margin: 5rem 0;
+       
+    }
+
+    .float-right {
+        padding: 10rem;
+    }
+     
+    #name, #email, #subject, #message {
+         min-width: 50rem;
+         margin-bottom: 2rem;
+         
+    }
+    
+}

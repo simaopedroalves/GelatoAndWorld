@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt">
+ <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gelato, rita, travel, gelatoandworld ">
+    <title>Contacts</title>  
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="\world.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ff1abd11bd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:ital,wght@0,300;0,800;1,300&display=swap" rel="stylesheet">
+  </head>
+
+ <header>
+    <nav class="navbar" id="back_top"> 
+        <div class="logo"><a href="\index.html">Gelato And World</a></div>
+          <a href="#list_content" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </a>
+         <div class="navbar-links">
+             <ul id="list_content" class="">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="\Blog/blog.html">Blog</a></li>
+              <li><a href="\Services/services.html">Services</a></li>
+              <li><a href="\About/about.html">About</a></li>
+              <li><a href="\Contacts/contacts.html">Contact</a></li>
+             </ul>
+          </div>
+      </nav>
+  </header>
+
+  <body>
+     
+    <section class="repeated-img">
+      <p class="p-full-width searchBar">A foto retangular que queres em todas as "páginas"</p>
+      <img class="img-full-width"src="\img/img-1-FullWidth.jpg" alt="">  
+   </section>
+
+
+      <section class="contact">
+        <div class="img">  
+          <div>
+             <img src="\img/img-7-insta-sec.jpg" alt="">
+          </div>
+          <div class="social_media_icons social_media_icons-bio">
+             <a href="https://www.instagram.com/gelato.and.world/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+             <a href="https://pin.it/7D3TFLH" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+         </div>
+       </div>
+      
+       <div class="float-right">
+         <div class="contacts-form">
+          <p class="text-center searchBar">Do you have questions about any of the products, services or would you like to present me a proposal? Fill out the form below or send an email
+           to <span class="email-address">gelatoandthentheworld@gmail.com</span>.
+          </p>
+          <p class="text-center searchBar">
+            Want to stay up to date with what I’m up to and where I’m in the world? Follow me on Instagram. 
+          </p>
+         </div>
+         <!-- ======================================================================================= -->
+         <form class="form-message" action="https://formsubmit.co/gelatoandthentheworld@gmail.com" method="POST">
+         <div class="required"> 
+          <label id="labelName" for="name">Name<span style="color: red;">*</span></label>
+          <input onkeyup="verifyName()" maxlength="40" id="name" type="text" name="name" required>
+
+          <label id="labelEmail" for="email">Email<span style="color: red;">*</span></label>
+          <input onkeyup="verifyEmail()" id="email" type="email" name="email" required>
+
+          <label id="labelSubject" for="subject">Subject<span style="color: red;">*</span></label>
+          <input onkeyup="assunto()" id="subject" type="text" name="subject" required maxlength="50">
+         </div>
+         <div>
+              <label for="message">Message<span style="color: red;">*</span></label>
+              <br>
+             <textarea id="message" name="message" class="message" required>
+             </textarea>
+         </div>
+         <div>
+         <input type="hidden" name="_next" value="https://projetodarita.netlify.app/Thanks_page/thanks.html">
+         <input type="hidden" name="_subject" value="New email from CONTACT!">
+         <button id="submit" type="submit" class="btn" name="q">Submit</button>
+         </div>         
+         </form> 
+       </div>
+       <!-- ============================================================================================= -->
+      </section>
+
+       <!-- FEED DO INSTAGRAM ONLINE -->
+
+       <h2 class="instagram-feed-title">Follow me on instagram</h2>
+        <section class="instagram-feed">
+          
+          <div class="feed-images">
+            <a href="https://www.instagram.com/p/CuMvYN3MKiB/"><img src="\img/1-img-feed.webp" alt=""></a>
+           </div>
+           <div class="feed-images">
+            <a href="https://www.instagram.com/p/CrZHZOksgek/"><img src="\img/2-img-feed.png" alt=""></a>
+           </div>
+           <div class="feed-images">
+            <a href="https://www.instagram.com/p/Cp_KN8cMF-9/"><img src="\img/3-img-feed.png" alt=""></a>
+           </div>
+           <div class="feed-images">
+            <a href="https://www.instagram.com/p/CoA_39eMgEM/"><img src="\img/4-img-feed.png" alt=""></a>
+           </div>
+           <div class="feed-images">
+            <a href="https://www.instagram.com/p/ClMt4j7s85K/"><img src="\img/5-img-feed.png" alt=""></a>
+           </div>
+           <div class="feed-images">
+            <a href="https://www.instagram.com/p/CkotDnCshEH/"><img src="\img/6-img-feed.png" alt=""></a>
+           </div>
+      </section>
+       
+      <footer class="footer">
+     
+        <div class="social_media">
+         <p class="searchBar">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla 
+          </p>
+          <p class="searchBar">
+            Lorem ipsum dolor sit amet consectetur
+          </p>
+          <p class="coffee searchBar">Buy me a <a href="https://ko-fi.com/"><i class="fa-solid fa-mug-saucer"></i></a>
+          </p>
+        
+        </div>  
+        
+                  
+        
+        <div class="social_media_icons">
+                <a href="https://www.instagram.com/gelato.and.world/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+    
+        <!-- <div>
+              <h3 class="newsletter-title">Newsletter</h3>
+              <form class="newsletter-form" action="https://formsubmit.co/gelatoandthentheworld@gmail.com" method="POST">
+                <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                <input id="email" type="email" name="email" placeholder="Email address" required>
+                <input type="hidden" name="_next" value="https://projetodarita.netlify.app/Thanks_page/thanks.html">
+                <input type="hidden" name="_subject" value="New email to be a Newsletter!">
+                <button id="submit" type="submit" class="btn" name="submit">Submit</button>
+              </form> 
+        </div> -->
+      </footer>
+
+
+
+     
+
+    <script src="\gelato.js"></script>
+  </body>
+
+</html>

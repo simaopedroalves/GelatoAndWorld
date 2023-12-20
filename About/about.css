@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding:0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* header .navbar {
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 0.15rem;
+    color: var(--blue-2);
+} */
+
+hr {
+    min-height: 0.12rem;
+    background: var(--blue-1);
+    width: 50vw;
+    margin: -2rem auto;
+}
+
+
+.iam-rita {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 0;
+}
+
+.img-about {
+   padding: 3rem;
+}
+
+.know-about-me-img {
+    margin: 3rem 0 0 0;
+} 
+
+.about-text {
+    padding: 0 3rem;
+    text-align: center;
+    text-align: justify;
+}
+
+.h4-title {
+    text-transform: uppercase;
+    margin-top: 7rem;
+    margin-bottom: -2rem;
+    font-size: 1.2rem;
+    color: var(--blue-2);
+}
+
+.about-the-girl {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    text-align: justify;
+    padding: 0 3rem;
+}
+
+.more-details {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: -5rem;
+    padding: 0 3rem;
+    text-align: justify;
+}
+
+.get-to-know-me {
+    margin-bottom: 3rem;
+}
+/* .full-width-section-2 {
+margin-bottom: 7rem;
+} */
+
+@media screen and (min-width: 600px) {
+    .iam-rita {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 2rem;
+        padding: 0 20rem;
+        align-items: center;
+    }
+
+    .about-text {
+        padding: 20rem 10rem;
+    }
+
+    .about-text p {
+        margin-bottom: 3rem;
+       
+    }
+
+    .h4-title {
+        font-size: 2rem;
+    }
+
+    .h2-title {
+        margin-bottom: 2rem;
+        font-size: 6rem;
+    }
+
+    .about-the-girl {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
+        padding: 0 30rem;
+        font-size: 2rem;
+    } 
+    .about-the-girl div {
+        margin-bottom: 3rem;
+        text-align: justify;
+    }
+
+    .more-details {
+        grid-template-columns: repeat(6, 1fr);  
+        align-content: center;
+        align-items: center;
+        padding: 10rem 20rem;
+        gap: 10rem;
+        font-size: 2rem;
+    }
+    .know-about-me-img{
+        order: 1;
+        grid-column: span 5;
+        min-height: 80vh;
+
+        /* min-width: 25vw; */
+    }
+    .get-to-know-me {
+        /* display: grid;
+        gap: -10rem; */
+        font-size: 2rem;
+        /* padding: 0 25rem 0 0; */
+        grid-column: span 1;
+        text-align: center;
+    }
+ 
+}  

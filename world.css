@@ -1,0 +1,838 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 0 0 0;
+    padding:0;
+}
+/*
+hr {
+    background-color: var(--blue-1);
+    min-height: 3px;
+    width: 50%;
+}
+*/
+.border {
+    border: solid 3px red;
+}
+
+.noDisplay {
+    display: none;
+}
+
+:root {
+    --blue-1:#557189;
+    --blue-2: #819AB0;
+    --white: #fff;
+    --white-2: rgba(255, 255, 255, 0.8);
+    --black: #000;
+    --brown: #c48600a2;
+}
+
+section {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    object-fit: cover;
+    
+    image-rendering: optimizeSpeed;
+}
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    width: auto;
+    text-transform: uppercase;
+   
+}
+
+.logo a {
+    color: var(--blue-2);
+}
+
+.logo a:hover {
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+ /*  NAVBAR */
+
+header .navbar {
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 0.15rem;
+    color: var(--blue-2);
+    position: fixed;
+} 
+
+.navbar-links ul {
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 0;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+   
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: var(--blue-1);
+    font-size: 1.5rem;
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+   
+}
+
+.navbar-links {
+    display: none;
+    width: 100%;
+   
+}
+
+.navbar-links.active {
+    display: flex;
+} 
+
+
+
+/* HAMBURGUER MENU*/
+
+.toggle-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+    /* margin-right: 2rem; */
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--blue-2);
+    border-radius: 30%;
+}
+/* PRIMEIRA IMAGEM */
+
+.img1 {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 5rem 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* INSTAGRAM SECTION*/
+.instagram-section {
+    width: auto;
+    
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 3rem 1rem; 
+}
+
+.fotoOne {
+   grid-column: span 2;
+}
+
+/* .test {
+    
+     max-height: fill;
+    width: 100%; 
+} */
+
+.titles {
+    margin: 0 auto;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 0.15rem;
+    color: var(--blue-1);
+}
+
+
+/* SEARCH BAR */
+
+
+
+
+
+.search-bar {
+    margin: 0 0 7rem 0;
+   
+}
+
+.search-bar input {
+    min-width: 40%;
+    min-height: 4rem;
+    border: none;
+    border-bottom: var(--blue-2) 0.5rem solid;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+ 
+.search-bar input::placeholder {
+    color: var(--blue-1);
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+}
+
+.fa-ice-cream {
+    color: var(--blue-2);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+/* FULL WIDTH IMAGE */
+
+.repeated-img {
+    width: auto;
+    position: relative;
+    margin: 5rem 0 0.5rem 0;   /*Fiz alteraçao, é preciso ver todas as imagens de full-width*/
+}
+
+.img-full-width {
+    width: 100vw;
+    max-height: 20vh;
+    padding: 0;
+    object-fit: cover;
+    margin: 0;
+    z-index: 0;
+}
+
+.p-full-width {
+    z-index: 3;
+    color: var(--white);
+    position: absolute;
+    top: 33%;
+    left: 5rem;
+    right: 5rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 0.15rem;
+}
+
+.rita {
+
+    object-position: bottom;
+}
+
+
+
+/* Biography*/
+
+.biography {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+
+.biography div .justify-p {
+    text-align: justify;
+    
+}
+.bio-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 0.15rem;
+}
+.bio-world {
+    color: var(--blue-1);
+    font-weight: bold;
+}
+
+.biography-text p{
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.bio-photo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 3rem 0;
+    padding: 2rem;
+}
+
+.find-out-more {
+    background-color: var(--blue-1);
+
+}
+
+.find-out-more a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.find-out-more a:hover {
+    color: var(--black);
+}
+
+
+.social_media_icons-bio {
+    position: absolute;
+    bottom: 0;
+    left: 33%; 
+}
+
+
+/*  SERVICES */
+  .services {
+    padding: 5rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .services p {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 0.15rem;
+    background-color: var(--white);
+    color: var(--blue-2);
+    cursor: pointer;
+    font-size: 1.7rem;
+ }
+
+ .services p:hover {
+    color: var(--blue-1)
+ }
+
+ .services a:link {
+    text-decoration: none;
+ }
+
+ .services-img {
+    min-height: 40vh;
+    max-height: 50vh;
+}
+
+.services-section {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* BLOG */
+
+.blog {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    padding: 5rem;
+    margin: 0;
+    align-items: center;
+}
+
+.post-blog {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.post-blog figcaption {
+    text-transform: uppercase;
+    color: var(--blue-1);
+    font-size: 1.7rem;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 0.3rem;
+}
+
+.post-blog a:link {
+    text-decoration: none;
+}
+
+.post-blog p {
+    color: var(--blue-1);
+    
+}
+
+
+
+/* i {
+    display: none;
+} */
+
+
+/*  NEWSLETTER  */
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    padding: 1rem 6rem;
+    margin: 0 3rem;
+
+}
+
+.newsletter-title {
+    font-weight: bold;
+    text-align: center;
+    margin: 6rem 0 0 0;
+    font-family: 'League Gothic', sans-serif;
+    color: var(--blue-1);
+    letter-spacing: 0.15rem;
+}
+
+#name, #email, #subject, #message {
+    border: 3px solid var(--blue-2);
+    height: 4rem;
+    border-radius: 5px;
+}
+
+
+.newsletter-img {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.newsletter-img img {
+    /* border: solid var(--blue-1) 6px; */
+    width: 100%;
+    height: 100%;
+    min-height: 25vh;
+}
+
+.newsletter-text {
+    padding: 0;
+}
+
+.img-rotate {
+    transform: rotate(10deg);
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    padding: 3rem;
+}
+
+.newsletter-text-and-form {
+    padding: 0;
+    margin: -4rem 0;
+}
+
+#submit {
+    background-color: var(--blue-1);
+    color: var(--white);
+    border-radius: 30px;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    font-size: 1.5rem;
+}
+
+/* FEED INSTAGRAM */
+
+.instagram-feed {
+      margin: 2rem 0 5rem 0;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+
+}
+
+.instagram-feed-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--blue-1);
+    margin-top: 5rem;
+    font-family:  'League Gothic', sans-serif;
+    letter-spacing: 0.15rem;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    display: grid;
+    background: var(--white);
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    margin: 5rem;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.social_media_icons a i {
+    border-radius: 50%;
+    padding: 1rem;
+    color: var(--white);
+    background-color: var(--blue-1);
+    margin-right: 1rem;
+}
+
+.coffee {
+    margin-top: 2rem;
+}
+
+/* TABLET */
+
+
+
+/*===============LAPTOP====================*/
+
+@media screen and (min-width: 600px) {
+    .logo {
+        font-size: 3rem;
+        min-width: fit-content;
+    }
+     .toggle-button {
+       display: none;
+    }
+    header .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-width: 100%;
+        background-color: var(--white-2);
+        
+    }
+    .navbar-links ul{
+         display: flex;
+         flex-direction: row;
+         justify-content: flex-end;
+         background-image: var(--white-2);
+    }
+
+
+
+    .navbar-links {
+        margin-right: 5rem;
+        display: flex;
+
+
+    }
+    .navbar-links ul li a {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--blue-2);
+        letter-spacing: 0.3rem;
+        background-image: var(--white-2);
+    }
+
+    /* .img1 {
+        width: 100vw;
+        max-height: 60vh;
+        margin-top: 8rem;
+    } */
+
+    .img1 {
+        width: 100%;
+        
+        min-height: 90%;
+        max-height: 90vh;
+        padding: 0rem;
+        margin-top: 8rem;
+    
+    }
+
+    /* INSTAGRAM SECTION*/
+
+    .instagram-section {
+        gap: 1rem;
+        padding: 5rem 30rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /*  BIOGRAPHY */
+     
+    .biography-text p{
+        margin: 1rem;
+    }
+    
+    .bio-title {
+        font-size: 6rem;
+    }
+
+    .biography {
+        flex-direction: row-reverse;
+        margin: 5rem 5rem;
+    }
+    .biography p {
+        padding: 0 8rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .bio-img {
+       min-width: 20vw;
+    }
+
+/*=========IMAGENS RETANGULARES========*/
+.repeated-img {
+    margin-top: 8rem;
+    margin-bottom: 0;
+}
+
+.img-full-width {
+    width: 100vw;
+    max-height: 60vh;
+}
+
+ .p-full-width {
+      font-size: 5rem;
+    } 
+
+/*  SERVICES */
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10rem 20rem;
+    gap: 2rem;
+  }
+  .services-img {
+    min-height: 70vh;
+    min-width: 100%;
+  }
+
+  .services p {
+    font-size: 2.5rem;
+  }
+
+
+
+/* BLOG */
+::-webkit-scrollbar {
+    height: 1rem;
+    width: 1rem;
+    overflow: scroll;
+    background: var(--white);
+    /* display: none; */
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--blue-1);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue-2);
+
+}
+
+.blog::-webkit-scrollbar:horizontal{
+    overflow: scroll;
+    height: 1rem;
+    background: var(--white);
+    display: none;
+}
+
+.blog::-webkit-scrollbar-thumb:horizontal:hover {
+    background: var(--blue-2);
+    cursor: pointer;
+    /* display: none; */
+}
+
+.blog::-webkit-scrollbar-thumb {
+    background: var(--blue-1);
+    /* display: none; */
+} 
+
+.container-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 5rem;
+}
+
+.blog {
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    padding: 0;
+    margin: 0;
+}
+
+.post-blog {
+    min-width: 100%;
+    font-size: 1.9rem;
+    flex-direction: row;
+    /* margin-right: 10rem; */
+    gap: 1rem;
+}
+
+.post-blog figcaption {
+    font-size: 2.5rem;
+}
+
+
+/* BOTOES */
+
+.arrow {
+    display: flex;
+    border-radius: 50%;
+    font-size: 7rem;
+    color: var(--white);
+    background-color: var(--blue-2);
+    z-index: 888888888888888888;
+    margin: 1rem;
+}
+
+
+/* .leftArrow {
+    position: absolute;
+    padding: 0;
+    top: 20rem;
+    left: 0;
+    /* border: solid green 5px; 
+} */
+/* 
+.rightArrow {
+    position: absolute;
+    padding: 0;
+    top: 20rem;
+    right: 0;
+    /* border: solid green 5px; 
+} */
+
+
+/*  NEWSLETTER  */
+
+.newsletter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 20rem;
+    gap: 1rem;
+}
+
+.newsletter-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 5rem;
+   
+}
+
+.newsletter-img {
+    /* flex-direction: row; */
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+.newsletter-img img {
+    /* max-width: 30rem;
+    max-height: 30rem; 
+    border: solid var(--blue-1) 7px;
+*/ object-fit: cover;
+}
+
+.newsletter-text-and-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+}
+
+#name, #email, #subject, #message{
+    width: 30rem;
+}
+
+
+
+.instagram-feed {
+    grid-template-columns: repeat(6, 1fr);
+    margin: 3rem 5rem 10rem 5rem;
+}
+
+.instagram-feed-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10rem;
+}
+
+/*FOOTER*/
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0rem;
+        justify-content: center;
+        
+    }
+
+    .social_media {
+        font-size: 2.5rem;
+    }
+
+    .fa-mug-saucer {
+        font-size: 2rem;
+        animation: shakeY;
+        color: var(--blue-1);
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    .social_media_icons {
+        font-size: 3rem;
+    }
+
+    .social_media_icons a:hover i{
+        color: var(--blue-2);
+    }
+}
+
+
