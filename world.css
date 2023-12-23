@@ -36,7 +36,6 @@ section {
 
 img {
     object-fit: cover;
-    
     image-rendering: optimizeSpeed;
 }
 
@@ -510,8 +509,13 @@ header .navbar {
 /*===============LAPTOP====================*/
 
 @media screen and (min-width: 600px) {
+   header .navbar {
+    /* max-height: ; */
+
+    }
+    
     .logo {
-        font-size: 3rem;
+        /* font-size: 3rem; */
         min-width: fit-content;
     }
      .toggle-button {
@@ -541,7 +545,7 @@ header .navbar {
 
     }
     .navbar-links ul li a {
-        font-size: 2.5rem;
+        /* font-size: 2.5rem; */
         text-transform: uppercase;
         font-weight: bold;
         color: var(--blue-2);
@@ -557,9 +561,8 @@ header .navbar {
 
     .img1 {
         min-width: 100vw;
-        max-height: 90vh;
-        padding: 0rem;
-        margin-top: 8rem;
+        max-height: 70vh;
+        /* margin-top: 8rem; */
     }
 
     /* INSTAGRAM SECTION*/

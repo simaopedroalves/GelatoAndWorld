@@ -190,26 +190,26 @@ const container = document.querySelectorAll('.container')
 //  })
 
 
-iceCream.addEventListener('click', () => {
+// iceCream.addEventListener('click', () => {
 
-  for (let i = 0; i <= container.length; i++) {
-      let search = container[i].getElementsByTagName('h2')[0]
-      let res = search.textContent.toLowerCase()
-      let barValue = bar.value.toLowerCase()
+//   for (let i = 0; i <= container.length; i++) {
+//       let search = container[i].getElementsByTagName('h2')[0]
+//       let res = search.textContent.toLowerCase()
+//       let barValue = bar.value.toLowerCase()
 
-    if (res.indexOf(barValue) > -1) {
-       container[i].style.display = 'grid';
-       container[i].style.color = 'red'
-    }
+//     if (res.indexOf(barValue) > -1) {
+//       //  container[i].style.display = 'grid';
+//       //  container[i].style.color = 'red'
+//     }
     
-    else {
-        container[i].style.display = 'none'
+//     else {
+//         container[i].style.display = 'none'
      
-    }
+//     }
 
     
-  }
-})
+//   }
+// })
 
 
 // console.log(test);

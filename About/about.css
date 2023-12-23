@@ -9,12 +9,6 @@ body {
     padding: 0;
 }
 
-/* header .navbar {
-    font-family: 'League Gothic', sans-serif;
-    letter-spacing: 0.15rem;
-    color: var(--blue-2);
-} */
-
 hr {
     min-height: 0.12rem;
     background: var(--blue-1);
@@ -22,10 +16,9 @@ hr {
     margin: -2rem auto;
 }
 
-
 .iam-rita {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); 
+    grid-template-columns: repeat(1, 1fr);
     gap: 0;
 }
 
@@ -35,7 +28,7 @@ hr {
 
 .know-about-me-img {
     margin: 3rem 0 0 0;
-} 
+}
 
 .about-text {
     padding: 0 3rem;
@@ -45,21 +38,21 @@ hr {
 
 .h4-title {
     text-transform: uppercase;
-    margin-top: 7rem;
-    margin-bottom: -2rem;
     font-size: 1.2rem;
     color: var(--blue-2);
 }
 
 .about-the-girl {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    margin: 10vh 0 0 0;
+    /* grid-template-columns: repeat(2, 1fr); */
     gap: 1.5rem;
     text-align: justify;
     padding: 0 3rem;
 }
 
 .more-details {
+    margin: 5vh 0 0 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: -5rem;
@@ -67,28 +60,20 @@ hr {
     text-align: justify;
 }
 
-.get-to-know-me {
-    margin-bottom: 3rem;
+    .get-to-know-me {
+    margin: 5vh 0 0 0;
 }
 /* .full-width-section-2 {
 margin-bottom: 7rem;
 } */
 
 @media screen and (min-width: 600px) {
+
     .iam-rita {
         grid-template-columns: repeat(2, 1fr);
         font-size: 2rem;
-        padding: 0 20rem;
         align-items: center;
-    }
-
-    .about-text {
-        padding: 20rem 10rem;
-    }
-
-    .about-text p {
-        margin-bottom: 3rem;
-       
+        margin: 25vh 0 25vh 0;
     }
 
     .h4-title {
@@ -96,43 +81,62 @@ margin-bottom: 7rem;
     }
 
     .h2-title {
-        margin-bottom: 2rem;
-        font-size: 6rem;
+        /* margin-bottom: 2rem; */
+        font-size: 4rem;
     }
 
     .about-the-girl {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 6rem;
-        padding: 0 30rem;
+        grid-template-columns: repeat(4, 1fr);
+        /* gap: 6rem; */
         font-size: 2rem;
-    } 
-    .about-the-girl div {
-        margin-bottom: 3rem;
-        text-align: justify;
+        max-height: 90vh;
+        align-items: center;
+        margin: 0 auto;
     }
 
+    .titles {
+        grid-column: span 4;
+    }
+
+    .div-one, .div-two {
+        min-width: 40vw;
+        text-align: justify;
+        min-height: 100%;
+        display: grid;
+        justify-content: center;
+        grid-column: span 2;
+    }
+
+    .div-one div, .div-two div {
+        margin: 1rem 0;
+    }
+
+/* ============================================ */
+
     .more-details {
-        grid-template-columns: repeat(6, 1fr);  
-        align-content: center;
+        margin: 25vh 0 0 0;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: space-between;
         align-items: center;
-        padding: 10rem 20rem;
-        gap: 10rem;
         font-size: 2rem;
+        gap: 5%;
     }
     .know-about-me-img{
         order: 1;
         grid-column: span 5;
         min-height: 80vh;
-
-        /* min-width: 25vw; */
+    }
+    .know-about-me-img img{
+     min-height: 100%;
     }
     .get-to-know-me {
-        /* display: grid;
-        gap: -10rem; */
         font-size: 2rem;
-        /* padding: 0 25rem 0 0; */
         grid-column: span 1;
         text-align: center;
     }
- 
-}  
+
+    .img-full-width {
+        min-height: 80vh;
+    }
+
+}
