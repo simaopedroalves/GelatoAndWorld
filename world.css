@@ -509,10 +509,6 @@ header .navbar {
 /*===============LAPTOP====================*/
 
 @media screen and (min-width: 600px) {
-   header .navbar {
-    /* max-height: ; */
-
-    }
     
     .logo {
         /* font-size: 3rem; */
@@ -717,7 +713,7 @@ header .navbar {
     font-size: 7rem;
     color: var(--white);
     background-color: var(--blue-2);
-    z-index: 888888888888888888;
+    z-index: 88;
     margin: 1rem;
 }
 
