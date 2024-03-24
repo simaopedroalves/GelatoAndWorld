@@ -520,7 +520,7 @@ header .navbar {
     header .navbar {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        /* align-items: center; */
         min-width: 100%;
         background-color: var(--white-2);
         
@@ -529,6 +529,7 @@ header .navbar {
          display: flex;
          flex-direction: row;
          justify-content: flex-end;
+         /* align-items: center; */
          background-image: var(--white-2);
     }
 
@@ -537,7 +538,7 @@ header .navbar {
     .navbar-links {
         margin-right: 5rem;
         display: flex;
-
+        /* align-items: center; */
 
     }
     .navbar-links ul li a {
