@@ -41,7 +41,8 @@
    
 }
 
-.social_media_icons {
+/* POSITION OF SOCIAL MEDIA ICONS ON PHOTO */
+.positionAbsolute {
     position: absolute;
     bottom: 0;
     left: 33%
@@ -95,6 +96,12 @@ form div textarea {
     #name, #email, #subject, #message {
          margin-bottom: 2rem;
          
+    }
+
+    .footer div:nth-child(3) {
+        max-width: min-content;
+        margin: 0 auto;
+        gap: -2rem;
     }
     
 }

@@ -53,7 +53,7 @@
           <div>
              <img src="\img/img-7-insta-sec.jpg" alt="" class="border">
           </div>
-          <div class="social_media_icons border">
+          <div class="social_media_icons positionAbsolute border">
              <a href="https://www.instagram.com/gelato.and.world/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
              <a href="https://pin.it/7D3TFLH" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
@@ -70,33 +70,35 @@
           </p>
          </div>
          <!-- ======================================================================================= -->
-         <form class="form-message border" name="Gelato_And_World" action="/Thanks_page/thanks.html" method="POST" data-netlify="true" >
+          <form class="form-message border" name="Gelato_And_World" action="/Thanks_page/thanks.html" method="POST" data-netlify="true" >
          
-          <div class="required"> 
+            <div class="required"> 
 
-            <label id="labelName" for="name">Name<span style="color: red;">*</span></label>
-            <input onkeyup="verifyName()" maxlength="40" id="name" type="text" name="name" required>
+                <label id="labelName" for="name">Name<span style="color: red;">*</span></label>
+                <input onkeyup="verifyName()" maxlength="40" id="name" type="text" name="name" required>
 
-            <label id="labelEmail" for="email">Email<span style="color: red;">*</span></label>
-            <input onkeyup="verifyEmail()" id="email" type="email" name="email" required>
+                <label id="labelEmail" for="email">Email<span style="color: red;">*</span></label>
+                <input onkeyup="verifyEmail()" id="email" type="email" name="email" required>
 
-            <label id="labelSubject" for="subject">Subject<span style="color: red;">*</span></label>
-            <input onkeyup="assunto()" id="subject" type="text" name="subject" required maxlength="50">
+                <label id="labelSubject" for="subject">Subject<span style="color: red;">*</span></label>
+                <input onkeyup="assunto()" id="subject" type="text" name="subject" required maxlength="50">
 
-          </div>
+            </div>
 
-         <div class="message">
-              <label for="message">Message<span style="color: red;">*</span></label>
-              <br>
-             <textarea id="message" name="message" class="message">
-             </textarea>
-         </div>
-         <div>
-         <input type="hidden" name="_next" value="https://projetodarita.netlify.app/Thanks_page/thanks.html">
-         <input type="hidden" name="_subject" value="New email from CONTACT!">
-         <button id="submit" type="submit" class="btn" name="q">Submit</button>
-         </div>         
-         </form> 
+            <div class="message">
+                <label for="message">Message<span style="color: red;">*</span></label>
+                <br>
+                <textarea id="message" name="message" class="message">
+                </textarea>
+            </div>
+
+            <div>
+              <input type="hidden" name="_next" value="https://projetodarita.netlify.app/Thanks_page/thanks.html">
+              <input type="hidden" name="_subject" value="New email from CONTACT!">
+              <button id="submit" type="submit" class="btn" name="q">Submit</button>
+            </div>         
+
+          </form> 
        </div>
        <!-- ============================================================================================= -->
       </section>
@@ -124,41 +126,62 @@
            <div class="feed-images">
             <a href="https://www.instagram.com/p/CkotDnCshEH/"><img src="\img/6-img-feed.png" alt=""></a>
            </div>
-      </section>
+        </section>
        
-      <footer class="footer">
+        <footer class="footer">
      
-        <div class="social_media">
-         <p class="searchBar">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla 
-          </p>
-          <p class="searchBar">
-            Lorem ipsum dolor sit amet consectetur
-          </p>
-          <p class="coffee searchBar">Buy me a <a href="https://ko-fi.com/"><i class="fa-solid fa-mug-saucer"></i></a>
-          </p>
-        
-        </div>  
-        
-                  
-        
-        <div class="social_media_icons_footer">
-                <a href="https://www.instagram.com/gelato.and.world/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-        </div>
-    
-        <!-- <div>
-              <h3 class="newsletter-title">Newsletter</h3>
-              <form class="newsletter-form" action="https://formsubmit.co/gelatoandthentheworld@gmail.com" method="POST">
-                <input id="name" type="text" name="name" placeholder="Enter your name" required>
-                <input id="email" type="email" name="email" placeholder="Email address" required>
-                <input type="hidden" name="_next" value="https://projetodarita.netlify.app/Thanks_page/thanks.html">
-                <input type="hidden" name="_subject" value="New email to be a Newsletter!">
-                <button id="submit" type="submit" class="btn" name="submit">Submit</button>
-              </form> 
-        </div> -->
-      </footer>
+          <div class="social_media">
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla 
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur
+            </p>
+            <p class="coffee">Buy me a <a href="https://ko-fi.com/"><i class="fa-solid fa-mug-saucer"></i></a>
+            </p>
+          
+          </div>  
+          
+                    
+          
+          <div class="social_media_icons">
+                  <a href="https://www.instagram.com/gelato.and.world/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+
+          <div>
+                <h3 class="newsletter-title">Newsletter</h3>
+                <form class="newsletter-form" action="https://formsubmit.co/gelatoandthentheworld@gmail.com" method="POST">
+                  <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                  <input id="email" type="email" name="email" placeholder="Email address" required>
+                  <input type="hidden" name="_next" value="https://projetodarita.netlify.app/Thanks_page/thanks.html">
+                  <input type="hidden" name="_subject" value="New email to be a Newsletter!">
+                  <button id="submit" type="submit" class="btn" name="submit">Submit</button>
+                </form> 
+          </div>
+          
+          
+          <div class="footerLinks">
+            <a href="#">
+              <span>Top</span>
+            </a>
+            <a href="/Blog/blog.html">
+              <span>Blog</span>
+            </a>
+            <a href="/Contacts/contacts.html">
+              <span>Contact</span>
+            </a>
+            <a href="/About/about.html">
+              <span>About me</span>
+            </a>
+            <a href="/Services/services.html">
+              <span>Services</span>
+            </a>
+          </div>
+
+        </footer>
 
 
 
