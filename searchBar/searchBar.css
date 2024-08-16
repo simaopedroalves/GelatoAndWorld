@@ -1,0 +1,27 @@
+.search-results {
+    margin: 10vh auto;
+    text-align: center;
+    color: var(--blue-2);
+}
+
+.result-container {
+    border: solid var(--blue-2) 2px;
+    padding: 1rem;
+    margin: 2vh 5vw;
+}
+
+.typed-words {
+    color: var(--brown);
+    font-size: 2rem;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.related-content {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.words-founded {
+    color: var(--brown);
+}
